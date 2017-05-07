@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Property Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- ActivityDate --></label>
+        <name>ActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActivityType --></label>
+        <name>ActivityType__c</name>
+        <relationshipLabel><!-- Property Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Property Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+        <relationshipLabel><!-- Property Activities --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Property Activity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

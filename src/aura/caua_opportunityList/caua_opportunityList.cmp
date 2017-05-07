@@ -1,0 +1,8 @@
+<aura:component controller="CAUA_OpportunityAuraCtrl">
+	<aura:attribute name="opportunityArray" type="Opportunity[]" />
+	
+	<ui:button label="Get Opportunities" press="{!c.getOpportunityArray}" />
+	<aura:iteration items="{!opportunityArray}" var="opportunity">
+		<p>{!opportunity.Name} : {!opportunity.CloseDate}</p> 
+	</aura:iteration>
+</aura:component>

@@ -1,0 +1,23 @@
+<aura:component >
+    <aura:attribute name="lead" type="Lead" />
+
+	<li class="slds-size--1-of-3 slds-show--inline-block">
+        <lightning:card variant="narrow" class="slds-m-around--small" iconName="standard:lead">
+            <aura:set attribute="title">{!v.lead.Name}</aura:set>
+            <div class="slds-tile slds-p-horizontal--large">
+                <div class="slds-tile__detail slds-text-body--small">
+                    <dl class="slds-list--horizontal slds-wrap">
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Second Label">Company:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.lead.Company}</dd>
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Second Label">Email Address:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.lead.Email}</dd>
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Third Label">Status:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.lead.Status}</dd>
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="First Label">Phone:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.lead.Phone}</dd>
+                    </dl>
+                </div>
+            </div>
+        </lightning:card>
+	</li>
+</aura:component>

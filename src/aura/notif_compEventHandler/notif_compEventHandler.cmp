@@ -1,0 +1,11 @@
+<aura:component >
+	<aura:attribute name="messageFromEvent" type="String" />
+	<aura:attribute name="numberOfEvents" type="String" />
+	
+	<aura:handler name="compEvent" event="c:notif_compEvent" action="{!c.handleComponentEvent}" />
+	
+	<c:notif_compEventNotifier />
+	
+	<p>{!v.messageFromEvent}</p>
+	<p>Number of events: {!v.numberOfEvents}</p>
+</aura:component>

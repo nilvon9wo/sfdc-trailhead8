@@ -1,0 +1,6 @@
+<aura:component >
+	<aura:handler name="deleteExpenseItemEvent" event="c:caua_deleteExpenseItemEvent" action="deleteEvent" />
+	<aura:iteration items="{!v.expenseList}" var="expense">
+		<c:caua_deleteExpense expense="{!expense}" />
+	</aura:iteration>	
+</aura:component>

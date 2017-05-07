@@ -1,0 +1,8 @@
+<aura:component >
+	<aura:attribute name="list" type="Account[]" />
+	<ul class="slds-col slds-size--1-of-1">
+		<aura:iteration items="{!v.list}" var="item">
+			<c:accountCard name="{!item.Name}" phone="{!item.Phone}" website="{!item.Website}" owner="{!item.OwnerId}" />
+		</aura:iteration>
+    </ul>
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:component controller="CAUA_ExpenseAuraCtrl">
+	<aura:attribute name="expense" type="Expense__c" />
+	<aura:registerEvent name="deleteExpenseItemEvent" type="c:caua_deleteExpenseItemEvent" />
+	<ui:button label="Delete" press="{!c.delete}" />
+</aura:component>

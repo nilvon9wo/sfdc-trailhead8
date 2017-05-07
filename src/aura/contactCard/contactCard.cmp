@@ -1,0 +1,21 @@
+<aura:component >
+    <aura:attribute name="contact" type="Contact" />
+
+	<li class="slds-size--1-of-3 slds-show--inline-block">
+      <lightning:card variant="narrow" class="slds-m-around--small" iconName="standard:contact">
+          <aura:set attribute="title">{!v.contact.Name}</aura:set>
+          <div class="slds-tile slds-p-horizontal--large">
+              <div class="slds-tile__detail slds-text-body--small">
+                  <dl class="slds-list--horizontal slds-wrap">
+                      <dt class="slds-item--label slds-text-color--weak slds-truncate" title="First Label">Email Address:</dt>
+                      <dd class="slds-item--detail slds-truncate">{!v.contact.Email}</dd>
+                      <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Second Label">Title:</dt>
+                      <dd class="slds-item--detail slds-truncate">{!v.contact.Title}</dd>
+                      <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Third Label">Phone:</dt>
+                      <dd class="slds-item--detail slds-truncate">{!v.contact.Phone}</dd>
+                  </dl>
+              </div>
+          </div>
+      </lightning:card>
+	</li>	
+</aura:component>

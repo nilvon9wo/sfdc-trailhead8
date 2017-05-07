@@ -1,0 +1,4 @@
+<aura:component >
+	<c:notif_hybridEventHandler name="eventsHandler1" />
+	<c:notif_hybridEventHandler name="eventsHandler2" />
+</aura:component>

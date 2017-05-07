@@ -1,0 +1,17 @@
+<aura:component >
+	<aura:attribute name="name" type="String"/>
+	<aura:attribute name="mostRecentEvent" type="String" default="Most recent event handled:" />
+	<aura:attribute name="numberOfApplicationEventsHandled" type="Integer" default="0" />
+	<aura:attribute name="numberOfCOmponentEventsHandled" type="Integer" default="0" />
+	
+	<aura:handler event="c:notif_appEvent" action="{!c.handleApplicationEventFired}" />
+	<aura:handler name="componenteventFired" event="c:notif_compEvent" action="{!c.handleComponentEventFired}" />
+	
+	<div>
+		<h3>This is {!v.name}</h3>
+		<p>{!v.mostRecentEvents}</p>
+		<p># component events handdled: {!v.numberOfComponentEventsHandled}</p>
+		<p># appplication events handdled: {!v.numberOfApplicationEventsHandled}</p>
+		<c:notif_hybridEventNotifier parentName="{#v.name}" />
+	</div>
+</aura:component>

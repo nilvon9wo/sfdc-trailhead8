@@ -1,0 +1,3 @@
+<aura:component >
+	<ui:button label="Edit Record" press="{!c.edit}" />	
+</aura:component>

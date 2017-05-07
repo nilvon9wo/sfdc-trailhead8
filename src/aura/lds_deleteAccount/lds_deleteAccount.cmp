@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+	<aura:attribute access="private" name="recordError" type="String" />
+	
+	<force:recordPreview aura:id="recordHandler"
+		recordId="{!v.recordId}"
+		fields="Id"
+		targetError="{!v.recordError}" 
+	/>
+	
+	<aura:if isTrue="{!not(empty(v.recordError))}">
+		<div class="recordError">
+			<ui:message title="Error" severity="error" closable="true">{!v.recordError}</ui:message>
+		</div>
+	</aura:if>
+	
+	<div class="slds-form-element">
+		<ui:button class="slds-button slds-button--brand" label="Delete Record" press="{!c.handleDeleteRecord}" />
+	</div>	
+</aura:component>

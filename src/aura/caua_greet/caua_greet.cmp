@@ -1,0 +1,4 @@
+<aura:component controller="CAUA_SimpleAuraCtrl">
+	<aura:attribute name="firstName" type="String" default="World" />
+	<ui:button label="Call server" press="{!c.callServer}" />
+</aura:component>

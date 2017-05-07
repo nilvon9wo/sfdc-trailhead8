@@ -1,0 +1,3 @@
+<aura:component controller="CAUA_ExpenseAuraCtrl">
+	<ui:button label="Submit" press="{!c.createExpense}" />
+</aura:component>

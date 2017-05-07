@@ -1,0 +1,3 @@
+<aura:tokens >
+    <aura:token name="colorTextBrand" value="#8d7d74" />
+</aura:tokens>

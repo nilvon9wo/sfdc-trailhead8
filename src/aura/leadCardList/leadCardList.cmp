@@ -1,0 +1,8 @@
+<aura:component >
+	<aura:attribute name="list" type="Lead[]" />
+	<ul class="slds-col slds-size--1-of-1">
+		<aura:iteration items="{!v.list}" var="item">
+		    <c:leadCard lead="{!item}" />
+		</aura:iteration>
+	</ul>
+</aura:component>

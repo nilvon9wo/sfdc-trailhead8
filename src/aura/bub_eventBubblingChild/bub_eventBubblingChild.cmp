@@ -1,0 +1,7 @@
+<aura:component >
+	<aura:handler name="bubblingEvent" event="c:bub_compEvent" action="{!c.handleBubbling}" />
+	
+	<div class="child">
+		{!v.body}
+	</div>
+</aura:component>

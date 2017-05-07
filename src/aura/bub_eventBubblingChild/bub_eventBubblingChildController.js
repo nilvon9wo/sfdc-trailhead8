@@ -1,0 +1,4 @@
+({
+	handleBubbling: function () {
+	}
+})

@@ -1,0 +1,9 @@
+<aura:component >
+	<ltng:require scripts="{!$Resource.ca_counter}" afterScriptsLoaded="{!c.getValue}" />
+	<aura:attribute name="value" type="Integer" />
+	
+	<h1>My Counter</h1>
+	<p>{!v.value}</p>
+	<lightning:button label="Get Value" onclick="{!c.getValue}" />
+	<lightning:button label="Increment" onclick="{!c.increment}" />
+</aura:component>

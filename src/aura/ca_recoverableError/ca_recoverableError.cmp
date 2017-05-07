@@ -1,0 +1,7 @@
+<aura:component >
+	<p>Click the button to trigger the controller to throw an error.</p>
+	<div aura:id="div1">
+	</div>
+
+	<ui:button label="throw error" press="{!c.throwErrorForKicks}" />
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component controller="CAUA_WidgetAuraCtrl">
+	<aura:attribute name="widgetArray" type="Widget__c[]" />
+	
+	<aura:iteration items="{!widgetArray}" var="widget">
+		<p>{!widget.Name} : {!widget.text__c}</p> 
+	</aura:iteration>
+</aura:component>

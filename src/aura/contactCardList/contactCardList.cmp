@@ -1,0 +1,8 @@
+<aura:component >
+	<aura:attribute name="list" type="Contact[]" />
+	<ul class="slds-col slds-size--1-of-1">
+		<aura:iteration items="{!v.list}" var="item">
+		    <c:contactCard contact="{!item}" />
+		</aura:iteration>
+    </ul>
+</aura:component>
